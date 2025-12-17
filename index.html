@@ -3,66 +3,76 @@
 <head>
   <title>My Website</title>
 
-  <!-- STYLE (COLORS & DESIGN) -->
- <style>
-  body {
-    background: linear-gradient(to right, #e3f2fd, #bbdefb);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
-  h1 {
-    color: #0d47a1;
-  }
+    .card {
+      background: white;
+      max-width: 420px;
+      margin: 40px auto;
+      padding: 25px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
 
-  p {
-    font-size: 18px;
-    color: #333;
-  }
+    h1 {
+      color: #0d47a1;
+    }
 
-  button {
-    padding: 12px 24px;
-    background-color: #0d47a1;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
-  }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
 
-  button:hover {
-    background-color: #1565c0;
-  }
+    button {
+      padding: 12px 24px;
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
 
-  img {
-    width: 320px;
-    margin-top: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  }
-</style>
+    button:hover {
+      background-color: #1565c0;
+    }
 
+    img {
+      width: 300px;
+      margin-top: 20px;
+      border-radius: 15px;
+    }
+  </style>
 </head>
 
 <body>
 
- <div class="card">
+  <div class="card">
 
-  <h1>Welcome to Hussaini’s Website</h1>
-  <p>I am learning how to build a website.</p>
+    <h1>Welcome to Hussaini’s Website</h1>
+    <p>I am learning how to build a website.</p>
 
-  <button onclick="sayHello()">Click Me</button>
+    <button onclick="sayHello()">Click Me</button>
 
-  <br><br>
-  <a href="https://wa.me/2349014755386" target="_blank">
-    <button>Chat with me on WhatsApp</button>
-  </a>
-  <br>
-  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Computer image">
-</div>
-  <!-- JAVASCRIPT (BUTTON ACTION) -->
+    <br><br>
+
+    <a href="https://wa.me/2349014755386" target="_blank">
+      <button>Chat with me on WhatsApp</button>
+    </a>
+
+    <br>
+
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Computer image">
+
+  </div>
+
   <script>
     function sayHello() {
       alert("Hello! Thanks for visiting my website 😊");
