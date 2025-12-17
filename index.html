@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First Website</title>
+  <title>My Website</title>
+
+  <!-- STYLE (COLORS & DESIGN) -->
   <style>
+    body {
+      background-color: lightblue;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    p {
+      font-size: 18px;
+      color: black;
+    }
+
     button {
-  padding: 10px 20px;
-  background-color: darkblue;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-  body {
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
-  }
-  h1 {
-    color: darkblue;
-  }
-  p {
-    color: black;
-    font-size: 18px;
-  }
+      padding: 12px 20px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+
     img {
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-</style>
+      width: 300px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
+
 <body>
+
   <h1>Welcome to Hussaini’s Website</h1>
-<p>I am learning how to build a website.</p>
+  <p>I am learning how to build a website.</p>
+
   <button onclick="sayHello()">Click Me</button>
-  <img src=<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="My image">
+
+  <br>
+
+  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Computer image">
+
+  <!-- JAVASCRIPT (BUTTON ACTION) -->
   <script>
-  function sayHello() {
-    alert("Hello! Thanks for visiting my website 😊");
-  }
-</script>
+    function sayHello() {
+      alert("Hello! Thanks for visiting my website 😊");
+    }
+  </script>
+
 </body>
 </html>
